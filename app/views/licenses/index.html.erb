@@ -1,0 +1,16 @@
+<h1>Licences</h1>
+
+<table>
+  <tr>
+    <th> License ID</th>
+    <th> Account number</th>
+    <th> Legal Name</th>
+  </tr>
+  <% @licenses.each do |license| %>
+  <tr>
+    <td><%= license["license_id"] %></td>
+    <td><%= license["account_number"] %></td>
+    <td><%= license["legal_name"] %></td>
+  </tr>
+  <% end %>
+</table>
